@@ -21,7 +21,8 @@ def main():
                       )
   parser.add_argument("--model",
                       type=str,
-                      help="Different models has different capabilities and price points.\nSee https://beta.openai.com/docs/models/overview for details.",
+                      help="Different models has different capabilities and price points.\n" + \
+                              "Available models: text-davinci-003 text-curie-001 text-babbage-001 text-ada-001.",
                       default="text-davinci-003"
                       )
   args = parser.parse_args()
